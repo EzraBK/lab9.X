@@ -17,7 +17,7 @@
         Device            :  PIC16F18446
         Driver Version    :  2.00
 */
-//I changed it
+
 /*
     (c) 2018 Microchip Technology Inc. and its subsidiaries. 
     
@@ -86,7 +86,9 @@ void main(void)
 
     while (1)
     {
-
+        if(isRunning == 0){
+            SLEEP();
+        }
     }
 }
 /**
